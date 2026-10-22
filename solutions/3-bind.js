@@ -1,3 +1,3 @@
-// BEGIN
+const bind = (obj, fn) => (...args) => fn.apply(obj, args);
 
-// END
+export default bind;

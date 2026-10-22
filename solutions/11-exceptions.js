@@ -5,6 +5,12 @@ export class ParseError extends Error {
   }
 }
 
-// BEGIN
+export const parseJson = (json) => {
+  try {
+    return JSON.parse(json);
+  } catch (e) {
+    throw new ParseError('Invalid JSON string');
+  }
+};
 
-// END
+export default parseJson;

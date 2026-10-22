@@ -1,3 +1,7 @@
-// BEGIN
+const each = (objects, callback) => {
+  objects.forEach((obj) => {
+    callback.call(obj);
+  });
+};
 
-// END
+export default each;

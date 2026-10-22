@@ -31,6 +31,6 @@ Segment.prototype.getEndPoint = function getEndPoint() {
     return this.endPoint;
   };
 
-// BEGIN
-
-// END
+  Segment.prototype.toString = function toString() {
+  return `[${this.getBeginPoint().toString()}, ${this.getEndPoint().toString()}]`;
+  };
